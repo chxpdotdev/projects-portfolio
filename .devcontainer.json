@@ -1,3 +1,9 @@
 {
-  "image": "ghcr.io/zombiezen/codespaces-nix"
+  "image": "ghcr.io/zombiezen/codespaces-nix",
+
+  "containerEnv": {
+    "NIX_CONFIG": "experimental-features = nix-command flakes"
+  },
+  
+  "onCreateCommand": "mkdir -p $HOME/.config/nix && printf 'experimental-features = nix-command flakes\n' > $HOME/.config/nix/nix.conf"
 }
