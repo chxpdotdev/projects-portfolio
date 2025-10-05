@@ -2,7 +2,7 @@ baseURL: "http://projects.chxp.dev/"
 languageCode: en-us
 title: "chxp.dotdev project portfolio"
 theme: dead-simple
-enableGitInfo: true
+enableGitInfo: false
 
 menu:
   main:
