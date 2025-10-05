@@ -23,7 +23,7 @@
       git = pkgs.git;
       go = pkgs.go;
       hugo = pkgs.hugo;
-      nativeBuildInputs = [go hugo];
+      nativeBuildInputs = [go hugo git];
 
       site = pkgs.stdenv.mkDerivation (finalAttrs: {
         inherit nativeBuildInputs;
